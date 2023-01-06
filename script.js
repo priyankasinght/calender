@@ -4,7 +4,7 @@ let currentYear = today.getFullYear();
 let selectYear = document.getElementById("year");
 let selectMonth = document.getElementById("month");
 let date = document.getElementById("input-date");
-let myDays;
+
 
 
 function generateYearRange(start, end) {
@@ -85,32 +85,3 @@ function showCalendar(month, year) {
     }
 
 }
-
-//add btn coding
-function date5(myDays) {
-    const value = document.getElementById("value").value;
-    const ele = document.getElementsByClassName(value);
-    const allEle = document.getElementsByClassName("sel");
-    if (value >= myDays || value < 1) {
-      alert("Please enter a valid date!");
-    } else {
-      if (allEle.length >= 1) {
-        allEle[0].classList.remove("sel");
-        ele[0].className += " sel";
-      } else {
-        if (ele[0].className.split(" ").includes("sel")) {
-          ele[0].classList.remove("sel");
-          ele[0].className += " white";
-        } else {
-          ele[0].className += " sel";
-        }
-      }
-    }
-  }
-  const btn = document.getElementsByClassName("button1");
-  btn[0].addEventListener("click", () => date5(myDays));
-  const elements = document.getElementsByTagName("td");
-  function daysInMonth(iMonth, iYear) {
-    myDays = 32 - new Date(iYear, iMonth, 32).getDate();
-    return myDays;
-  }
