@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+
+}
+
+.wrapper{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+select{
+    margin-right: 20px;
+    border: 2px solid black;
+    padding: 13px;
+    width: 10rem;
+    font-size: 15px;
+}
+
+
+table, th, td {
+    
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+#enter{
+    border: none;
+    padding: 13px;
+    width: 7rem;
+    background-color: rgb(31, 31, 119);
+    color: white;
+    font-size: 15px;
+
+}
+
+#input-date{
+    border: 2px solid black;
+    padding: 13px;
+    width: 10rem;
+    font-size: 15px;
+    margin-right: 20px;
+}
+
+.dates tr td:hover{
+    background-color: green;
+}
+
